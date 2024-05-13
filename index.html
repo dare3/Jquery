@@ -75,14 +75,21 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script>
   // Add your code here!
+  // When the DOM is ready, console.log the message “Let’s get ready to party with jQuery!”
   $(document).ready(function(){
     console.log("Let's get ready to party with jQuery.");
-
+     
+    // Give all images inside of an article tag the class of image-center (this class is defined inside of the style tag in the head).
     $("a").addClass("image-center");
-
+    
+    //Remove the last paragraph in the article.
     $("p").last().remove();
 
+    // Set the font size of the title to be a random pixel size from 0 to 100.
     $("#title").css({'font-size': "50px"});
+
+    // Add an item to the list; it can say whatever you want.
+    $("ol").append($("<li>", {text: "The pup looks beautiful inside the cup!"}));
 
   });
   
